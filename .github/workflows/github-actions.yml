@@ -19,7 +19,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 # 단기간에 여러번 변경이 되는 경우 현재 진행 중인 workflow와 마지막 workflow를 제외한 나머지 작업을 진행하지 않도록 제어하기 위한 구문입니다.
-oncurrency:
+concurrency:
   group: "pages"
   cancel-in-progress: false
 
