@@ -55,7 +55,7 @@ jobs:
         # env:
         #   TOKEN: ${{ secrets.GITACTIONAUTHORIZATION }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           # Upload entire repository
           path: docs/build/html/
