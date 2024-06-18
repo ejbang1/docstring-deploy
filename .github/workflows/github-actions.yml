@@ -47,6 +47,7 @@ jobs:
       # package 설치 후 HTML 생성 예시입니다
       # private package dependency가 있어 인증을 위해 git token을 사용하였는데 무시하셔도 됩니다.
         run: |
+            pip${{ matrix.python-version }} install -e .  # 패키지 설치
             cd docs
             make html
             touch _build/html/.nojekyll
