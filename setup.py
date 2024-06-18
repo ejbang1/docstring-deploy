@@ -13,7 +13,7 @@ setup(
     author='ejbang1',  # 패키지 저자
     author_email='ejbang1@seegene.com',  # 저자 이메일
     description='Description of your package',  # 패키지 설명
-    long_description=open('README.md').read(),  # README 파일을 통한 자세한 설명
-    long_description_content_type='text/markdown',  # README 파일의 형식
+    # long_description=open('README.md').read(),  # README 파일을 통한 자세한 설명
+    # long_description_content_type='text/markdown',  # README 파일의 형식
     
 )
