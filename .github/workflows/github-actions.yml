@@ -55,11 +55,11 @@ jobs:
         # env:
         #   TOKEN: ${{ secrets.GITACTIONAUTHORIZATION }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
           path: docs/build/html/
       # 앞서 말한 Git Pages에서 git action 방식으로 HTML을 deploy하기 위한 workflow입니다
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v1
